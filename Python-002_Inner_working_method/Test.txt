@@ -1,0 +1,28 @@
+*** PYTHON | cpython ***
+
+
+
+--Python Inner Working Method--
+
+//NOTE - After installation of python in your local machine along with the language python install also python interpreter and python virtual machine.
+
+
+0. Python Interpreter => Script/Code file
+
+
+1. index.py or etc.py [PY_Code] => Mostly Hidden [Byte_Code] => Python Virtual Machine [Python_VM]|
+
+
+1.a. Initially python interpreter run any py script/py code compiles(Technical term) into Byte codes(LOW LEVEL CODE and not MACHINE CODE).
+
+
+1.b. Byte codes run faster than script. Byte code example: abc.cpython-314.pyc . Byte codes are low lavel code that is why this codes can be run inside any machine which has installed Python_VM. That is why python is one of the first language choices for cloude services. 
+
+
+1.c. this .pyc as Byte_Code is also called compiled python or FROZEN_BINARIES
+
+
+1.d. FROZEN_BINARIES => Python_VM
+
+
+2. __pycache__ , 
