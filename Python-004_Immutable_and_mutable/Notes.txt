@@ -1,0 +1,29 @@
+***Immutable and Mutable Data types in Python***
+
+01. Data Types:
+
+01.a. Immutable -
+- Integers
+- Float-point numbers
+- Boolean
+- Strings
+- Tuples
+- Frozen Set
+- Bytes
+
+
+01.b. Mutable -
+- List
+- Set
+- Dictionary
+- Bytearray
+- Array
+
+
+02.Concept of Immutable and Mutable Data types in Python
+
+- In python when a dev assign any value in varible/attribute on the basis of memory allocation mutable and immutable data types acts differently.
+
+- In case of mutable data types memory allocation helps dev to completely replace the previous value/values with the new assigned value inside the allocated memory.
+
+- In case of immutable data types the allocated memory only holds the referance value of assigned data type. Here the initilized attribute point towards the referance valued data. In future if any new referance value added to the same attribute, the old unused referance value shall be deleted cause python has it's inbuilt garbage collection methods, after that the alloacted memory of that attribute will point towards the new reference value. That means in case of immutable data types developers can not change or replace the created referance value assigned inside created memory.
