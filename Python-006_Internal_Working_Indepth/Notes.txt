@@ -1,0 +1,17 @@
+***Internl Working of Immutable and Mutable Data types in Python***
+
+NOTE - 
+01. In Python other than any Low Level Languages varible/attributes does not confined the values, if any value is declared after memory allocation it's origin will be kept inside that allocated memory and a referance pointer will be given to the variable, means here in python varibles only points at the valued reference kept insinde the allocated memory which can be both mutable or immutable data types.
+    That is why in python assinged varibles has no data type but the allocated memory has and the data types are assigned within the memory. Variables just point towards the reference value.
+
+
+02. Python is a number first language, here Numbers and Strings are treated differently.
+
+03. Python has a very optimized garbage collector. In any case if a variable is removed for any reason the garbage collector efficiently cleans the empty reference of that value allocated in the memory. But this process takes place differently for String and Number Data Types. Garbage does not starts immediately.
+
+04. In Python there is a inner operation that helps the python compiler to counts all the allocated memory reference of values. There is a method to determine the ref-counts. But python language restrict the user to get closer toward the memory, that is why it start it's internal Compiler Optimization Loop.
+
+
+05. In python if a code results a calculation, before that the memory allocation takes place. Compute calculation can be manupulated by import libraries, force CPU or GPU to calculate.
+
+06. Python Dynamic Referance Type to determine the reference data type, cause every dtat type defination kept inside the memory.
