@@ -1,0 +1,119 @@
+***Indepth Working method of Number Data types in Python***
+
+NOTE - 
+01. () Parentheses - Works first
+02. {} Curly Braces - Then this
+03. [] Square Brackets - At last
+
+NOTE - Operators
+
+= = equals to
++ = plus
+- = minus
+* = multiply
+/ = division
+% = remainder
+** = power
+> = greater than
+< = less than
+>= = greater than equals to
+<= = less than equals to
++= = plus equals to
+!= not equals to
+== = check data type
+is = check for same memory reference
+and = return true if both the arguments are true
+or =  return true if one of the argument is true
+
+
+04. Operator Overloading: 
+    Like any other programming language in python plus [+] operator can automatically determine the left and the right data type values and if they are belongs to same data type returns the concatinated value.
+
+05. Boolean Data types:
+    Python treats Boolean data types as numbers, cause Boolean data types are nothin but wrappers over number data types. -
+    True = 1
+    False = 0
+
+
+
+NOTE -
+
+In Python, `repr()`, `str()`, and `print()` are three important functions that deal with string representations of objects. Each serves a different purpose and is used in different contexts. Here’s a detailed explanation of each, along with their differences:
+
+### 1. `repr()`
+
+- Purpose: 
+    The `repr()` function is used to obtain a string representation of an object that is ideally unambiguous and, if possible, could be used to recreate the object. It is mainly intended for developers and debugging.
+
+- Usage: 
+    It is called by the built-in function `repr()` or by using the `__repr__()` method of an object.
+
+- Output: 
+    The output of `repr()` is often more detailed and includes information that is useful for debugging. For example, it may include quotes around strings and escape characters.
+  
+Example:
+```python
+x = 'Hello, World!'
+print(repr(x))  # Output: "'Hello, World!'"
+```
+
+### 2. `str()`
+
+- Purpose:
+    The `str()` function is used to obtain a string representation of an object that is more user-friendly and readable. It is intended for end-users and is often used for display purposes.
+
+- Usage: 
+    It is called by the built-in function `str()` or by using the `__str__()` method of an object.
+
+- Output: 
+    The output of `str()` is typically more concise and easier to read compared to `repr()`. It focuses on providing a "pretty" representation of the object.
+
+Example:
+```python
+x = 'Hello, World!'
+print(str(x))  # Output: 'Hello, World!'
+```
+
+### 3. `print()`
+
+- Purpose: 
+    The `print()` function is used to output data to the console. It can take multiple arguments and can format the output in various ways.
+
+- Usage: 
+    It is called by the built-in function `print()`.
+
+- Output: 
+    The output of `print()` is what you see in the console. It uses the `str()` representation of the objects passed to it, but it can also format the output based on the parameters provided.
+
+Example:
+```python
+x = 'Hello, World!'
+print(x)  # Output: Hello, World!
+```
+
+### Differences
+
+1. Intended Audience:
+   - `repr()`: Aimed at developers for debugging.
+
+   - `str()`: Aimed at end-users for readability.
+
+   - `print()`: Outputs to the console, can take multiple arguments and format them.
+
+2. Output Format:
+   - `repr()`: More detailed and unambiguous, often includes quotes and escape characters.
+
+   - `str()`: More user-friendly and readable, focuses on presenting the object in a clear way.
+
+   - `print()`: Displays the output directly to the console, using the `str()` representation of the objects.
+
+3. Usage Context:
+   - `repr()`: Used when you need a detailed representation of an object, often in debugging contexts.
+
+   - `str()`: Used when you need a clean and readable representation of an object for display.
+
+   - `print()`: Used to display output to the console, can handle multiple items and formatting.
+
+### Summary
+
+In summary, `repr()` is for developers needing detailed information about an object, `str()` is for users wanting a readable representation, and `print()` is for displaying output to the console. Understanding these differences helps in effectively using them in Python programming.
