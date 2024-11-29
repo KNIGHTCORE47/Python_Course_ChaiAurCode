@@ -1,0 +1,26 @@
+***Iterators or also know as Loops in Python***
+
+NOTE - Major 2 types:
+    01. for Loop
+    02. while loop
+
+
+>>> Syntax:
+
+01. for Loop
+
+abc = ""
+
+for i in abc:
+    print(abc)
+
+
+
+
+
+02. while loop
+counter = 1
+
+while counter <= 5:     // While needs a true condition
+    print(counter)
+    counter += counter
