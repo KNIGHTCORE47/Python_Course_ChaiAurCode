@@ -7,9 +7,9 @@ nth_number = int(input("Enter the value: "))
 
 isPrime = True
 
-if nth_number > 0:
+if nth_number > 1:
     for number in range(2, nth_number):
-        if nth_number % number == 0:
+        if (nth_number % number) == 0:
             isPrime = False
             print(nth_number, "Is not a prime number.")
             break

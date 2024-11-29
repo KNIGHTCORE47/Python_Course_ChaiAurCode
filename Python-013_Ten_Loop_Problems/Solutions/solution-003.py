@@ -1,6 +1,6 @@
 #QS.03. Multiplication Table Printer
 
-# NOTE - break key word
+# NOTE - continue key word in Python: [It is used to skip the current iteration of the loop and continue to the next iteration]
 
 nth_number = int(input("Enter Your Value:"))
 
@@ -12,7 +12,7 @@ for nums in range(1, 11):
 print("")
 
 
-# FOR CODE TERMINATION:
+# FOR CODE TERMINATION: break key word in Python [It is used to terminate the loop]
 
 for nums in range(1, 11):
     print(f"{nth_number} x {nums} = {nth_number * nums}")
