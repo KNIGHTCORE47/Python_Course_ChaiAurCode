@@ -1,0 +1,89 @@
+***Internl Working of Iterators also known as loops in Python***
+
+
+NOTE - 
+In python, loops are litle bit re-imagened behind the scene, but identical from the front like any other low level languages.
+
+
+01. Iterable Objects:
+    a. Strings,
+    b. Lists,
+    c. Dictionaries,
+    d. Comprehesions,
+    e. files,
+    f. range
+
+
+NOTE - In python, for-loops or while-loops are considered as Iteration Tools. This tools only works upon given Iterable Objects.
+
+
+NOTE - In python, iteration consists of 3 major component structure:
+
+    >>> Iteration Tool
+            >> for, comprehesion etc.
+
+    >>> Iterable Objects
+            >>lists, file etc.
+
+    >>> Response
+            >>__next__ , __iter__
+
+
+NOTE - 
+        __next__() can also be denotes with next()
+        __iter__() can also be denotes with iter()
+
+
+
+** Special Case **
+
+File - In python the file is that iterable object which has a speciality to make the variable which has the memory address iterable object. Example - 
+    file = open("./DEMO.txt")
+
+    here this - file - variable holds the memory reference as well as is a iterable object.
+
+    >>>iter(file) is file      # Output: True
+
+
+
+
+** WORKING METHOD **
+
+ - First Iteration Tools asks for iteration at the memory
+
+ - If memory has Iterable Object and code allows then Iteration Tools send a iter() method over that Iterable Object
+
+ - In that response the Iterable Objects sends always the memory address of the first Iterable Objects element allocated inside memory reference and __next__ method
+
+ - __next__ has the ability to determine the boundaries of the iterable objects. Like for a list as myList = [1,2,3,4] __next__ has the ability to loop until reaching the list's final element.
+
+ - Iteration happend as after getting the memory address of the first Iterable Object element, loop that out. Then comes __next__ method which ensures that another Iterable Object element found in the mmemoy reference, so loop that out until last. 
+
+ - During the loop the Iteration Tool loopping out the element upon obtain next() method
+
+ - At the end of the iterarion a exception raises for loop termination called [Stop Iteration Exception] handled by __next__ or also know as next() method
+
+
+
+
+
+[Iteration Tools] ----> (iter()) ----> [Iterable Objects]
+
+
+[Iterable Objects] ----> [__next__] ----> [Iteration Tools]
+
+
+myList = [1,2,3,4]
+
+mem_add = memory_address
+st_it_ex = stop_iteration_exception
+
+[Iteration Tools](mem_add, next()) ----> print(1)
+
+[Iteration Tools](mem_add, next()) ----> print(2)
+
+[Iteration Tools](mem_add, next()) ----> print(3)
+
+[Iteration Tools](mem_add, next()) ----> print(4)
+
+[Iteration Tools](st_it_ex) ----> Terminate!!
