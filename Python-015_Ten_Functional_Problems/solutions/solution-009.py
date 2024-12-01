@@ -48,7 +48,7 @@ print("\n")
 
 # Inside python after memory definition, internally python manages 1st element memory reference address and maintain the yelded.
 
-#  Internally python uses this memory reference address to determine the next element to be yelded nd so on.
+#  Internally python uses this memory reference address to determine the next element to be yelded and so on.
 
 # Also internally if two different Iteration Tools are pointing to the same memory reference address then the yeald will not mismatch the value of the same memory reference address, like give 1st iterator tool 2 and 2nd iterator tool 3, then 1st iterator tool will give 2 and 2nd iterator tool will give 3 and so on. 
 
