@@ -21,7 +21,7 @@ result01()
 def chaicode(num_P):
     def actual(num_C):
         return num_C ** num_P
-    return actual   # Here we are returning the child function definition and the child function returns the result of parameters passed down by arguments
+    return actual   # Here we are returning the child function definition and the child function returns the result of parameters passed down by arguments to the parent function
 
 square_result = chaicode(2)
 cube_result = chaicode(3)
