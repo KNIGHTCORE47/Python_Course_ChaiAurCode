@@ -1,0 +1,32 @@
+***Scopes and Closures in Python***
+
+Scopes are also know as Namespaces
+
+NOTE - Scopes/Namespaces
+        01. Global Scope
+        02. Local Scope
+
+## In python, usage of scopes mainly focuses over function defination.
+
+*** Global Scope:
+    - Defined outside of the function
+
+*** Local Scope:
+    - Define inside of the function
+
+
+
+*** If a variable define at the global scope, any function can access that reference value inside.
+
+*** If a Parent function has other Child functions inside, according to the Local Scope if any varible derfine inside of Parent function, Child functions can access that reference values as well.
+
+
+*** But Child functions can not access there local scoped reference values with each other.
+
+
+
+
+
+
+
+
