@@ -1,0 +1,20 @@
+*** Creation of virtual environments in python ***
+
+WINDOWS 11:
+    git_bash: (Shell Command)
+
+            01. pip install virtualenv
+
+            02. python -m venv .venv
+
+            03. source .venv/Scripts/activate
+
+            04. -- Pip install any_package --
+                a. pip install pymongo
+                b. pip install Django
+
+            05. pip freeze > requirement.txt
+            
+            
+            -- After Complete The Tasks --
+            06. deactivate
