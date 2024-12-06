@@ -1,9 +1,14 @@
 *** Creation of virtual environments in python ***
 
 WINDOWS 11:
-    git_bash: (Shell Command)
+    git_bash: (Shell Command):
+        - Global Scope: For Global Installation and One Time Only
 
             01. pip install virtualenv
+
+
+
+        - Local Scope: For Local Installation and can be installed in different folders
 
             02. python -m venv .venv
 

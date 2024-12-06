@@ -1,6 +1,6 @@
 # python virtual environment cheatsheet
 
-## Default Step_01
+## Default Step_01: For Global Installation and One Time Only
 `pip install virtualenv`
 
 ## Create a new virtual environment Step_02
